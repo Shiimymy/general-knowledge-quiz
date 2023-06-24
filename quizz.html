@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <div class="background">
+    <div class="background" id="quizz-content-area">
+
         <header>
             <h1>
                 Let's test you!
@@ -31,96 +32,157 @@
             <form action="POST">
                 <div class="question-area">
                     <h3>History</h3>
-                    <p class="question">What was the name of the first person to circumnavigate the globe?</p>
-                    <input type="radio" name="answer-question1" id="answer1-question1">
-                    <label for="answer1-question1">Christopher Columbus</label>
-                    <input type="radio" name="answer-question1" id="answer2-question1">
-                    <label for="answer2-question1">Ferdinand Magellan</label>
-                    <input type="radio" name="answer-question1" id="answer3-question1">
-                    <label for="answer3-question1">Marco Polo</label>
-                    <div id="image-feedback1"></div>
+                    <ul>
+                        <p class="question">What was the name of the first person to circumnavigate the globe?</p>
+                        <li>
+                            <input type="radio" name="answer-question1" id="answer1-question1">
+                            <label for="answer1-question1">Christopher Columbus</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question1" id="answer2-question1">
+                            <label for="answer2-question1">Ferdinand Magellan</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question1" id="answer3-question1">
+                            <label for="answer3-question1">Marco Polo</label>
+                        </li>
+                        <div id="image-feedback1"></div>
+                    </ul>
                 </div>
 
                 <div class="question-area">
                     <h3>Geography</h3>
                     <p class="question">What is the largest country in Africa?</p>
-                    <input type="radio" name="answer-question2" id="answer1-question2">
-                    <label for="answer1-question2">Algeria</label>
-                    <input type="radio" name="answer-question2" id="answer2-question2">
-                    <label for="answer2-question1">The Democratic Republic of the Congo</label>
-                    <input type="radio" name="answer-question2" id="answer3-question2">
-                    <label for="answer3-question2">Madagascar</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer-question2" id="answer1-question2">
+                            <label for="answer1-question2">Algeria</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question2" id="answer2-question2">
+                            <label for="answer2-question1">The Democratic Republic of the Congo</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question2" id="answer3-question2">
+                            <label for="answer3-question2">Madagascar</label>
+                        </li>
+                    </ul>
                     <div id="image-feedback2"></div>
                 </div>
 
                 <div class="question-area">
                     <h3>Geopolitics</h3>
-                    <p class="question">What is the name of the organization that aims to promote economic cooperation
+                    <p class="question">What is the name of the organization that aims to promote economic
+                        cooperation
                         among
                         countries?</p>
-                    <input type="radio" name="answer-question3" id="answer1-question3">
-                    <label for="answer1-question3">The World Intellectual Property Organization</label>
-                    <input type="radio" name="answer-question3" id="answer2-question3">
-                    <label for="answer2-question3">The Central Banks</label>
-                    <input type="radio" name="answer-question3" id="answer3-question3">
-                    <label for="answer3-question3">The World Trade Organization</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer-question3" id="answer1-question3">
+                            <label for="answer1-question3">The World Intellectual Property Organization</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question3" id="answer2-question3">
+                            <label for="answer2-question3">The Central Banks</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question3" id="answer3-question3">
+                            <label for="answer3-question3">The World Trade Organization</label>
+                        </li>
+                    </ul>
                     <div id="image-feedback3"></div>
                 </div>
 
                 <div class="question-area">
                     <h3>Economy</h3>
-                    <p class="question">What is called a situation in which a single company or group owns all or nearly
+                    <p class="question">What is called a situation in which a single company or group owns all or
+                        nearly
                         all
                         of the market for a given type of product or
                         service?</p>
-                    <input type="radio" name="answer-question4" id="answer1-question4">
-                    <label for="answer1-question4">A monopoly</label>
-                    <input type="radio" name="answer-question4" id="answer2-question4">
-                    <label for="answer2-question4">A monopsony</label>
-                    <input type="radio" name="answer-question4" id="answer3-question4">
-                    <label for="answer3-question4">A oligopoly</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer-question4" id="answer1-question4">
+                            <label for="answer1-question4">A monopoly</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question4" id="answer2-question4">
+                            <label for="answer2-question4">A monopsony</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question4" id="answer3-question4">
+                            <label for="answer3-question4">A oligopoly</label>
+                        </li>
+                    </ul>
                     <div id="image-feedback4"></div>
                 </div>
 
                 <div class="question-area">
                     <h3>Nature</h3>
                     <p class="question">What is the largest mammal on Earth?</p>
-                    <input type="radio" name="answer-question5" id="answer1-question5">
-                    <label for="answer1-question5">The Elephant</label>
-                    <input type="radio" name="answer-question5" id="answer2-question5">
-                    <label for="answer2-question5">The Hippopotamus</label>
-                    <input type="radio" name="answer-question5" id="answer3-question5">
-                    <label for="answer3-question5">The Blue whale</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer-question5" id="answer1-question5">
+                            <label for="answer1-question5">The Elephant</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question5" id="answer2-question5">
+                            <label for="answer2-question5">The Hippopotamus</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question5" id="answer3-question5">
+                            <label for="answer3-question5">The Blue whale</label>
+                        </li>
+                    </ul>
                     <div id="image-feedback5"></div>
                 </div>
 
                 <div class="question-area">
                     <h3>English</h3>
                     <p class="question">What is the definition of “plethora”?</p>
-                    <input type="radio" name="answer-question6" id="answer1-question6">
-                    <label for="answer1-question6">The use of unnecessary words to express an idea.</label>
-                    <input type="radio" name="answer-question6" id="answer2-question6">
-                    <label for="answer2-question6">A large or excessive amount of something.</label>
-                    <input type="radio" name="answer-question6" id="answer3-question6">
-                    <label for="answer3-question6">The state of being without or not having enough of something.</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer-question6" id="answer1-question6">
+                            <label for="answer1-question6">The use of unnecessary words to express an idea.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question6" id="answer2-question6">
+                            <label for="answer2-question6">A large or excessive amount of something.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question6" id="answer3-question6">
+                            <label for="answer3-question6">The state of being without or not having enough of
+                                something.</label>
+                        </li>
+                    </ul>
                     <div id="image-feedback6"></div>
                 </div>
 
                 <div class="question-area">
                     <h3>Psychology</h3>
                     <p class="question">What is Bandwagon pressuring?</p>
-                    <input type="radio" name="answer-question7" id="answer1-question7">
-                    <label for="answer1-question7"> A type of advertising technique that aims to
-                        convince people to do something because everyone
-                        else is doing it.</label>
-                    <input type="radio" name="answer-question7" id="answer2-question7">
-                    <label for="answer2-question7"> A technique which involves using words that sound impressive but
-                        don’t
-                        actually mean anything.</label>
-                    <input type="radio" name="answer-question7" id="answer3-question7">
-                    <label for="answer3-question7">A technique that involves using celebrities or other well-known
-                        figures
-                        to promote a product or service.</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer-question7" id="answer1-question7">
+                            <label for="answer1-question7"> A type of advertising technique that aims to
+                                convince people to do something because everyone
+                                else is doing it.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question7" id="answer2-question7">
+                            <label for="answer2-question7"> A technique which involves using words that sound impressive
+                                but
+                                don’t
+                                actually mean anything.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer-question7" id="answer3-question7">
+                            <label for="answer3-question7">A technique that involves using celebrities or other
+                                well-known
+                                figures
+                                to promote a product or service.</label>
+                        </li>
+                    </ul>
                     <div id="image-feedback7"></div>
                 </div>
 
@@ -128,6 +190,7 @@
 
             </form>
         </div>
+
     </div>
 
     <script src="https://kit.fontawesome.com/cc20595ad4.js" crossorigin="anonymous"></script>

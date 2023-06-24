@@ -68,3 +68,39 @@ input[type=submit]:hover {
     transition: 1s;
     cursor: pointer;
 }
+
+/* Quizz page */
+
+#quizz-content-area {
+    margin: 1rem 3rem;
+    padding: 1rem;
+}
+
+#result {
+    font-size: 1.5rem;
+    border: #204969 1px dotted;
+    border-radius: 4px;
+    margin: 0 25%;
+    padding: 1rem;
+}
+
+#result p {
+    margin: 0;
+    color: none;
+}
+
+.question-area {
+    margin: 5px 0;
+}
+
+.question {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 2px;
+}
