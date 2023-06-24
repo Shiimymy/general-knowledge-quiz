@@ -1,0 +1,20 @@
+/*All pages */
+
+body {
+    text-align: center;
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: #204969;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    background: #fff7f7;
+    margin: 2rem 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
