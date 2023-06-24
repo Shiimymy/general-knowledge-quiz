@@ -4,6 +4,11 @@ body {
     text-align: center;
     font-family: 'Wix Madefor Text', sans-serif;
     color: #204969;
+    background-image: url(../images/woman-writting-on-board.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
 }
 
 h1,
@@ -14,7 +19,52 @@ h3 {
 
 .background {
     background: #fff7f7;
-    margin: 2rem 5rem;
-    padding: 2rem;
     border-radius: 5px;
+}
+
+/*Welcome page */
+
+#welcome {
+    padding: 2rem 1rem;
+    margin: 13rem 15rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#welcome div {
+    padding: 5px 0;
+    font-size: 1.2rem;
+
+}
+
+input[type=text] {
+    background-color: transparent;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+input[type=text]:hover {
+    background-color: white;
+}
+
+
+input[type=submit] {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #204969;
+    color: #fff7f7;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    box-shadow: 1.5px 1.5px #2049696a;
+}
+
+input[type=submit]:hover {
+    border: 1px solid 204969;
+    background-color: #fff7f7;
+    color: #204969;
+    transition: 1s;
+    cursor: pointer;
 }
