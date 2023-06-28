@@ -69,7 +69,9 @@ function displaySubjects() {
 }
 displaySubjects();
 
+
 function getAnswers() {
+
 };
 
 function checkAnswers() { };
