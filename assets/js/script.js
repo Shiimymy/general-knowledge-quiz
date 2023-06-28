@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
 
 });
 
+let subjects = ["History", "Geography", "Geopolitics", "Economy", "Nature", "English", "Psychology"];
+
 let questionsList = [
     {
        question : "What was the name of the first person to circumnavigate the globe?" ;
@@ -58,7 +60,7 @@ let questionsList = [
     { text: "A technique which involves using words that sound impressive but don’t actually mean anything.", isCorrect: false },
     { text: "A technique that involves using celebrities or other well-known figures to promote a product or service.", isCorrect: false }]
     },
-]
+];
 
 function getAnswers() {
 };
