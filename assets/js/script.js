@@ -77,11 +77,29 @@ function displayQuestions() {
         divHTML +=
             "<h3>" + questionsList[i].subjects + "</h3>" +
             `<form>
-            <ul>
-            ${questionsList[i].question}
-            <li></li>
-            </ul>
-            </form>`
+               <ul>
+               ${questionsList[i].question}
+               <br>
+                  <li>
+                     <input type="radio">
+                     <lablel>
+                     ${questionsList[i].answers[0].text}
+                     </lablel>
+                  </li>
+                  <li>
+                     <input type="radio">
+                     <lablel>
+                     ${questionsList[i].answers[1].text}
+                     </lablel>
+                  </li>
+                  <li>
+                     <input type="radio">
+                     <lablel>
+                     ${questionsList[i].answers[2].text}
+                     </lablel>
+                  </li>
+               </ul >
+            </form >`
             ;
 
     };
