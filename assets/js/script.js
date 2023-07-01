@@ -62,13 +62,23 @@ let questionsList = [
 
 function displaySubjects() {
     let subjects = ["History", "Geography", "Geopolitics", "Economy", "Nature", "English", "Psychology"];
+    let h3 = document.createElement('h3');
+
+    let h3Html = ``;
 
     for (let i = 0; i < subjects.length; i++) {
         console.log(subjects[i]);
+        h3Html += subjects[i] + "<br>";
     }
+    h3.innerHTML = h3Html;
+    document.getElementById("quizz-area").appendChild(h3);
 }
 displaySubjects();
 
+function displayQuestions() {
+
+}
+displayQuestions();
 
 function getAnswers() {
 
