@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
 
 let questionsList = [
     {
+        subjects: "History",
         question: "What was the name of the first person to circumnavigate the globe?",
         answers: [
             { text: "Christopher Columbus", isCorrect: false },
@@ -17,6 +18,7 @@ let questionsList = [
             { text: "Marco Polo", isCorrect: false }]
     },
     {
+        subjects: "Geography",
         question: "What is the largest country in Africa?",
         answers: [
             { text: "Algeria", isCorrect: true },
@@ -24,6 +26,7 @@ let questionsList = [
             { text: "Madagascar", isCorrect: false }]
     },
     {
+        subjects: "Geopolitics",
         question: "What is the name of the organization that aims to promote economic cooperation among countries?",
         answers: [
             { text: "The World Intellectual Property Organization", isCorrect: false },
@@ -31,6 +34,7 @@ let questionsList = [
             { text: "The World Trade Organization", isCorrect: true }]
     },
     {
+        subjects: "Economy",
         question: "What is called a situation in which a single company or group owns all or nearly all of the market for a given type of product or service?",
         answers: [
             { text: "A monopoly", isCorrect: true },
@@ -38,6 +42,7 @@ let questionsList = [
             { text: "A oligopoly", isCorrect: false }]
     },
     {
+        subjects: "Nature",
         question: "What is the largest mammal on Earth?",
         answers: [
             { text: "The Elephant", isCorrect: false },
@@ -45,6 +50,7 @@ let questionsList = [
             { text: "The Blue whale", isCorrect: true }]
     },
     {
+        subjects: "English",
         question: "What is the definition of 'plethora'?",
         answers: [
             { text: "The use of unnecessary words to express an idea.", isCorrect: false },
@@ -52,6 +58,7 @@ let questionsList = [
             { text: "The state of being without or not having enough of something.", isCorrect: false }]
     },
     {
+        subjects: "Psychology",
         question: "What is 'Bandwagon pressuring'?",
         answers: [
             { text: "A type of advertising technique that aims to convince people to do something because everyone else is doing it.", isCorrect: true },
@@ -60,22 +67,27 @@ let questionsList = [
     },
 ];
 
-function displaySubjects() {
-    let subjects = ["History", "Geography", "Geopolitics", "Economy", "Nature", "English", "Psychology"];
-    let h3 = document.createElement('h3');
-
-    let h3Html = ``;
-
-    for (let i = 0; i < subjects.length; i++) {
-        console.log(subjects[i]);
-        h3Html += subjects[i] + "<br>";
-    }
-    h3.innerHTML = h3Html;
-    document.getElementById("quizz-area").appendChild(h3);
-}
-displaySubjects();
 
 function displayQuestions() {
+
+    let questions = document.createElement('div');
+    let divHTML = "";
+    for (let i = 0; i < questionsList.length; i++) {
+        console.log(questionsList[i].subjects);
+        divHTML +=
+            "<h3>" + questionsList[i].subjects + "</h3>" +
+            `<form>
+            <ul>
+            ${questionsList[i].question}
+            <li></li>
+            </ul>
+            </form>`
+            ;
+
+    };
+
+    questions.innerHTML = divHTML;
+    document.getElementById("quizz-area").appendChild(questions);
 
 }
 displayQuestions();
