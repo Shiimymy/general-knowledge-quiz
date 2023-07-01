@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
     let urlParams = new URLSearchParams(document.location.search);
     let username = urlParams.get("username");
     console.log(username);
-    document.getElementById("username-area").textContent = `${username}`;
+    document.getElementById("username-area").textContent = username.toUpperCase();
 
 });
 
@@ -76,7 +76,7 @@ function displayQuestions() {
         console.log(questionsList[i].subjects);
         divHTML +=
             "<h3>" + questionsList[i].subjects + "</h3>" +
-            `<form>
+            `<div>
                <ul>
                ${questionsList[i].question}
                <br>
@@ -99,13 +99,14 @@ function displayQuestions() {
                      </lablel>
                   </li>
                </ul >
-            </form >`
+               
+            </div >`
             ;
 
     };
 
     questions.innerHTML = divHTML;
-    document.getElementById("quizz-area").appendChild(questions);
+    document.getElementById("quizz-area").prepend(questions);
 
 }
 displayQuestions();
@@ -114,7 +115,9 @@ function getAnswers() {
 
 };
 
-function checkAnswers() { };
+function checkAnswers() {
+
+};
 
 function incrementScore() { };
 
