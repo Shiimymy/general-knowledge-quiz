@@ -113,10 +113,12 @@ displayQuestions();
 
 function getAnswers() {
 
+    let rightAnswer = 
+
 };
 
 function checkAnswers() {
-
+    getAnswers();
 };
 
 function incrementScore() { };
