@@ -114,11 +114,15 @@ function displayQuestions() {
 }
 displayQuestions();
 
-function getAnswers() {
+function getAnswers(event) {
+    event.preventDefault();
+    checkAnswers();
 };
 
-function checkAnswers() {
-    getAnswers();
+function checkAnswers(event) {
+    event.preventDefault();
+    console.log(questionsList);
+
 };
 
 function incrementScore() { };
