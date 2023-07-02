@@ -114,16 +114,16 @@ function displayQuestions() {
 }
 displayQuestions();
 
-function getAnswers(event) {
-    event.preventDefault();
-    checkAnswers();
-};
+for (i = 0; i < questionsList.length; i++) {
+    for (a = 0; a < questionsList[i].answers.length; a++) {
+        console.log(questionsList[i].answers[a]);
+    }
 
-function checkAnswers(event) {
-    event.preventDefault();
-    console.log(questionsList);
+}
+function getAnswers() {
 
-};
+}
+
 
 function incrementScore() { };
 
