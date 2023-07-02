@@ -72,8 +72,10 @@ function displayQuestions() {
 
     let questions = document.createElement('div');
     let divHTML = "";
-    for (let i = 0; i < questionsList.length; i++) {
-        console.log(questionsList[i].subjects);
+    questionsLength = questionsList.length;
+
+    for (let i = 0; i < questionsLength; i++) {
+
         divHTML +=
             "<h3>" + questionsList[i].subjects + "</h3>" +
             `<div>
@@ -81,20 +83,20 @@ function displayQuestions() {
                ${questionsList[i].question}
                <br>
                   <li>
-                     <input type="radio">
-                     <lablel>
+                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-1">
+                     <lablel for="${questionsList[i].subjects}-1">
                      ${questionsList[i].answers[0].text}
                      </lablel>
                   </li>
                   <li>
-                     <input type="radio">
-                     <lablel>
+                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-2">
+                     <lablel for="${questionsList[i].subjects}-2">
                      ${questionsList[i].answers[1].text}
                      </lablel>
                   </li>
                   <li>
-                     <input type="radio">
-                     <lablel>
+                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-3">
+                     <lablel for="${questionsList[i].subjects}-3">
                      ${questionsList[i].answers[2].text}
                      </lablel>
                   </li>
@@ -102,6 +104,7 @@ function displayQuestions() {
                
             </div >`
             ;
+
 
     };
 
@@ -112,9 +115,6 @@ function displayQuestions() {
 displayQuestions();
 
 function getAnswers() {
-
-    let rightAnswer = 
-
 };
 
 function checkAnswers() {
