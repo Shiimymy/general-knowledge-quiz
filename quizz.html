@@ -21,16 +21,29 @@
                 <br>
                 <i class="fa-regular fa-circle-question"></i>
             </h1>
-            <div id="result">
-                Your Score
-                <br>
-                <span id="score"></span>/7
-                <p id="feedback"></p>
-            </div>
         </header>
-        <div id="quizz-area"></div>
-        <input type="submit" value="Check your answers" onclick="getAnswers()">
 
+        <div id="quizz-area">
+            <form action="POST" class="question-area">
+                <h3 class="subject"></h3>
+                <ul>
+                    <p class="question"></p>
+                    <li>
+                        <input type="radio" name="answer" id="answer1">
+                        <label for="answer1"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="answer2">
+                        <label for="answer2"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="answer3">
+                        <label for="answer3"></label>
+                    </li>
+                </ul>
+                <input type="submit" value="Submit" onclick="displayNextQuestion()">
+            </form>
+        </div>
     </div>
 
     <script src="https://kit.fontawesome.com/cc20595ad4.js" crossorigin="anonymous"></script>
