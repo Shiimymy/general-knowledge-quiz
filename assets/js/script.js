@@ -1,4 +1,6 @@
 
+// Get username to display in quizz.html
+
 document.addEventListener("DOMContentLoaded", function getUsername() {
 
     let urlParams = new URLSearchParams(document.location.search);
@@ -7,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
     document.getElementById("username-area").textContent = username.toUpperCase();
 
 });
+
+// Quizz question List in an array of objects.
 
 let questionsList = [
     {
@@ -67,6 +71,10 @@ let questionsList = [
     },
 ];
 
+/**
+ * The main game "loop", called when the script is of quizz.html is display
+ * and display the subject, questions and answers found in the array
+ */
 
 function displayQuestions() {
 
@@ -111,8 +119,11 @@ function displayQuestions() {
 }
 displayQuestions();
 
-//
-
+/**
+ * Get the answers that the user selected thanks to the radio buttons
+ * and check the value of the input 
+ * to see if the right aswer has been selected
+ */
 
 function getAnswers() {
 
@@ -122,16 +133,15 @@ function getAnswers() {
         if (radio.checked) {
             if (radio.value === "true") {
                 console.log("Right !");
+                addToScore();
             } else {
                 console.log("Wrong !");
             }
         }
     }
-
 }
 
-
-function incrementScore() { };
+function addToScore() { };
 
 function displayImage() { };
 
