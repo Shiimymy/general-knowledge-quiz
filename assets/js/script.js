@@ -83,19 +83,19 @@ function displayQuestions() {
                ${questionsList[i].question}
                <br>
                   <li>
-                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-1">
+                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-1" class="radio" value="${questionsList[i].answers[0].isCorrect}">
                      <lablel for="${questionsList[i].subjects}-1">
                      ${questionsList[i].answers[0].text}
                      </lablel>
                   </li>
                   <li>
-                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-2">
+                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-2" class="radio" value="${questionsList[i].answers[1].isCorrect}">
                      <lablel for="${questionsList[i].subjects}-2">
                      ${questionsList[i].answers[1].text}
                      </lablel>
                   </li>
                   <li>
-                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-3">
+                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-3" class="radio" value="${questionsList[i].answers[2].isCorrect}">
                      <lablel for="${questionsList[i].subjects}-3">
                      ${questionsList[i].answers[2].text}
                      </lablel>
@@ -104,23 +104,29 @@ function displayQuestions() {
                
             </div >`
             ;
-
-
     };
 
     questions.innerHTML = divHTML;
     document.getElementById("quizz-area").prepend(questions);
-
 }
 displayQuestions();
 
-for (i = 0; i < questionsList.length; i++) {
-    for (a = 0; a < questionsList[i].answers.length; a++) {
-        console.log(questionsList[i].answers[a]);
-    }
+//
 
-}
+
 function getAnswers() {
+
+    let radios = document.getElementsByClassName("radio");
+
+    for (let radio of radios) {
+        if (radio.checked) {
+            if (radio.value === "true") {
+                console.log("Right !");
+            } else {
+                console.log("Wrong !");
+            }
+        }
+    }
 
 }
 
