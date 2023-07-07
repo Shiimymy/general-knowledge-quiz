@@ -131,9 +131,9 @@ let questionsList = [
 
 // Variables 
 
-subject = document.getElementById('subject');
-question = document.getElementById('question');
-options = document.getElementById('options');
+let subject = document.getElementById('subject');
+let questions = document.getElementById('question');
+let options = document.getElementById('options');
 
 
 
