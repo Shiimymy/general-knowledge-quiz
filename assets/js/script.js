@@ -129,18 +129,23 @@ let questionsList = [
 
 ];
 
+// Variables 
+
+subject = document.getElementById('subject');
+question = document.getElementById('question');
+options = document.getElementById('options');
+
+
+
 /**
  * The main game "loop", called when the script is of quizz.html is display
  * and display the subject, questions and answers found in the array
  */
 
 function displayQuestions() {
-    let x = 0;
-    let subject = document.getElementById('subject');
 
-    
 }
-console.log(setInterval(displayQuestions, 100));
+
 
 function getRandomQuestions() {
 
