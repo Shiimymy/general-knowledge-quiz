@@ -135,47 +135,25 @@ let questionsList = [
  */
 
 function displayQuestions() {
+    let x = 0;
+    let subject = document.getElementById('subject');
 
-    let questions = document.createElement('div');
-    let divHTML = "";
-    questionsLength = questionsList.length;
-
-    for (let i = 0; i < questionsLength; i++) {
-
-        divHTML +=
-            "<h3>" + questionsList[i].subjects + "</h3>" +
-            `<div>
-               <ul>
-               ${questionsList[i].question}
-               <br>
-                  <li>
-                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-1" class="radio" value="${questionsList[i].answers[0].isCorrect}">
-                     <lablel for="${questionsList[i].subjects}-1">
-                     ${questionsList[i].answers[0].text}
-                     </lablel>
-                  </li>
-                  <li>
-                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-2" class="radio" value="${questionsList[i].answers[1].isCorrect}">
-                     <lablel for="${questionsList[i].subjects}-2">
-                     ${questionsList[i].answers[1].text}
-                     </lablel>
-                  </li>
-                  <li>
-                     <input type="radio" name="answer-${questionsList[i].subjects}" id="${questionsList[i].subjects}-3" class="radio" value="${questionsList[i].answers[2].isCorrect}">
-                     <lablel for="${questionsList[i].subjects}-3">
-                     ${questionsList[i].answers[2].text}
-                     </lablel>
-                  </li>
-               </ul >
-               
-            </div >`
-            ;
-    };
-
-    questions.innerHTML = divHTML;
-    document.getElementById("quizz-area").prepend(questions);
+    
 }
-displayQuestions();
+console.log(setInterval(displayQuestions, 100));
+
+function getRandomQuestions() {
+
+    for (let i = 0, randomQ = questionsList, len = questionsList.length; i < len; i++) {
+        let selectedQuestion = Math.floor(Math.random() * randomQ.length);
+        console.log(randomQ[selectedQuestion]);
+        randomQ.splice(selectedQuestion, 1);
+
+    }
+}
+getRandomQuestions();
+
+
 
 /**
  * Get the answers that the user selected thanks to the radio buttons
@@ -184,19 +162,6 @@ displayQuestions();
  */
 
 function getAnswers() {
-
-    let radios = document.getElementsByClassName("radio");
-
-    for (let radio of radios) {
-        if (radio.checked) {
-            if (radio.value === "true") {
-                console.log("Right !");
-                addToScore();
-            } else {
-                console.log("Wrong !");
-            }
-        }
-    }
 }
 
 function addToScore() { };
