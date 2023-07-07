@@ -137,11 +137,6 @@ let options = document.getElementById('options');
 
 
 
-/**
- * The main game "loop", called when the script is of quizz.html is display
- * and display the subject, questions and answers found in the array
- */
-
 function displayQuestions() {
 
 }
@@ -159,12 +154,6 @@ function getRandomQuestions() {
 getRandomQuestions();
 
 
-
-/**
- * Get the answers that the user selected thanks to the radio buttons
- * and check the value of the input 
- * to see if the right aswer has been selected
- */
 
 function getAnswers() {
 }
