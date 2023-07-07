@@ -140,15 +140,36 @@ let options = document.getElementById('options');
 
 function displayQuestions() {
 
+    let result = getRandomQuestions(questionsList);
+    console.log(result);
+    console.log(result.subjects);
+    console.log(result.question);
 
+
+    subject.innerHTML = result.subjects;
+    questions.innerHTML = result.question;
+    options.innerHTML = `
+       <li>
+          <input type="radio" name="answer" id="answer-1">
+          <label>${result.answers[0].text}</label>
+       </li>
+       <li>
+          <input type="radio" name="answer" id="answer-2">
+          <label>${result.answers[1].text}</label>
+       </li>
+       <li>
+          <input type="radio" name="answer" id="answer-3">
+          <label>${result.answers[2].text}</label>
+       </li>
+    `;
 }
 displayQuestions();
 
 
 function getRandomQuestions(questionsList) {
     return questionsList[Math.floor(Math.random() * questionsList.length)];
+
 }
-console.log(getRandomQuestions(questionsList));
 
 
 
