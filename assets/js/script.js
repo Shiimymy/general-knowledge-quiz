@@ -20,6 +20,7 @@ let questionsList = [
             { text: "Christopher Columbus", isCorrect: false },
             { text: "Ferdinand Magellan", isCorrect: true },
             { text: "Marco Polo", isCorrect: false }]
+
     },
     {
         subjects: "History",
@@ -139,19 +140,15 @@ let options = document.getElementById('options');
 
 function displayQuestions() {
 
+
 }
+displayQuestions();
 
 
-function getRandomQuestions() {
-
-    for (let i = 0, randomQ = questionsList, len = questionsList.length; i < len; i++) {
-        let selectedQuestion = Math.floor(Math.random() * randomQ.length);
-        console.log(randomQ[selectedQuestion]);
-        randomQ.splice(selectedQuestion, 1);
-
-    }
+function getRandomQuestions(questionsList) {
+    return questionsList[Math.floor(Math.random() * questionsList.length)];
 }
-getRandomQuestions();
+console.log(getRandomQuestions(questionsList));
 
 
 
