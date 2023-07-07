@@ -26,21 +26,11 @@
         <div id="quizz-area">
             <form action="POST" class="question-area">
                 <h3 id="subject"></h3>
-                <ul>
-                    <p class="question"></p>
-                    <li>
-                        <input type="radio" name="answer" id="answer1">
-                        <label for="answer1"></label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="answer2">
-                        <label for="answer2"></label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="answer3">
-                        <label for="answer3"></label>
-                    </li>
-                </ul>
+
+                <p id="question"></p>
+
+                <ul id="options"></ul>
+
                 <input type="submit" value="Submit" onclick="displayNextQuestion()">
             </form>
         </div>
