@@ -113,7 +113,7 @@ let questionsList = [
     },
     {
         subjects: "Psychology",
-        question: "What is 'Bandwagon pressuring'?",
+        question: "What is 'Bandwagon pressuring?",
         answers: [
             { text: "A type of advertising technique that aims to convince people to do something because everyone else is doing it.", isCorrect: true },
             { text: "A technique which involves using words that sound impressive but don’t actually mean anything.", isCorrect: false },
@@ -121,7 +121,7 @@ let questionsList = [
     },
     {
         subjects: "Psychology",
-        question: "what is not a branche of psychology'?",
+        question: "What is not a branche of psychology?",
         answers: [
             { text: "American Psychology", isCorrect: true },
             { text: "Developmental psychology", isCorrect: false },
@@ -141,15 +141,11 @@ let options = document.getElementById('options');
 function displayQuestions() {
 
     let result = getRandomQuestions(questionsList);
-    console.log(result);
-    console.log(result.subjects);
-    console.log(result.question);
-
 
     subject.innerHTML = result.subjects;
     questions.innerHTML = result.question;
     options.innerHTML = `
-       <li>
+       <li> 
           <input type="radio" name="answer" id="answer-1">
           <label>${result.answers[0].text}</label>
        </li>
@@ -165,10 +161,15 @@ function displayQuestions() {
 }
 displayQuestions();
 
-
 function getRandomQuestions(questionsList) {
     return questionsList[Math.floor(Math.random() * questionsList.length)];
 
+}
+
+function displayNextQuestion(event) {
+    event.preventDefault();
+    displayQuestions();   
+    
 }
 
 
