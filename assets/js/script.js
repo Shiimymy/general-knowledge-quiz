@@ -24,7 +24,7 @@ let questionsList = [
     },
     {
         subjects: "History",
-        question: "What was the name of the fWhat was the name of the dynasty that ruled China from 1368 to 1644?",
+        question: "What was the name of the dynasty that ruled China from 1368 to 1644?",
         answers: [
             { text: "Tang dynasty", isCorrect: false },
             { text: "Qing dynasty", isCorrect: false },
@@ -135,7 +135,8 @@ let questionsList = [
 let subject = document.getElementById('subject');
 let questions = document.getElementById('question');
 let options = document.getElementById('options');
-
+let radios = document.getElementsByClassName("radio");
+let submit = document.getElementById('submit');
 
 
 function displayQuestions() {
@@ -146,18 +147,26 @@ function displayQuestions() {
     questions.innerHTML = result.question;
     options.innerHTML = `
        <li> 
-          <input type="radio" name="answer" id="answer-1">
-          <label>${result.answers[0].text}</label>
+          <input type="radio" name="answer" id="answer-1" class="radio" value="${result.answers[0].isCorrect}">
+          <label for"answer-1">${result.answers[0].text}</label>
        </li>
        <li>
-          <input type="radio" name="answer" id="answer-2">
-          <label>${result.answers[1].text}</label>
+          <input type="radio" name="answer" id="answer-2" class="radio" value="${result.answers[1].isCorrect}">
+          <label for"answer-2">${result.answers[1].text}</label>
        </li>
        <li>
-          <input type="radio" name="answer" id="answer-3">
-          <label>${result.answers[2].text}</label>
+          <input type="radio" name="answer" id="answer-3" class="radio" value="${result.answers[2].isCorrect}">
+          <label for"answer-3">${result.answers[2].text}</label>
        </li>
     `;
+
+        for(var i = 0, max = radios.length; i < max; i++) {
+    radios[i].onclick = function() {
+        localStorage.setItem('correct', this.value);
+        submit.addEventListener( "click", displayNextQuestion);
+    }
+
+}
 }
 displayQuestions();
 
@@ -166,16 +175,17 @@ function getRandomQuestions(questionsList) {
 
 }
 
-function displayNextQuestion(event) {
+function displayNextQuestion() {
     event.preventDefault();
-    displayQuestions();   
-    
+    displayQuestions();
 }
-
 
 
 function getAnswers() {
+
+    
 }
+
 
 function addToScore() { };
 
