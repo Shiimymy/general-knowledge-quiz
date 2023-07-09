@@ -160,13 +160,13 @@ function displayQuestions() {
        </li>
     `;
 
-        for(var i = 0, max = radios.length; i < max; i++) {
-    radios[i].onclick = function() {
-        localStorage.setItem('correct', this.value);
-        submit.addEventListener( "click", displayNextQuestion);
-    }
+    for (var i = 0, max = radios.length; i < max; i++) {
+        radios[i].onclick = function () {
+            localStorage.setItem('correct', this.value);
+            submit.addEventListener("click", displayNextQuestion);
+        };
 
-}
+    }
 }
 displayQuestions();
 
@@ -175,15 +175,21 @@ function getRandomQuestions(questionsList) {
 
 }
 
-function displayNextQuestion() {
+function displayNextQuestion(event) {
     event.preventDefault();
+    if (localStorage.correct == "true") {
+        alert("Right Answer");
+
+    } else {
+        alert("Wrong Answer");
+    }
     displayQuestions();
 }
 
 
 function getAnswers() {
 
-    
+
 }
 
 
