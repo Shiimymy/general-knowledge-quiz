@@ -2,12 +2,9 @@
 // Get username to display in quizz.html
 
 document.addEventListener("DOMContentLoaded", function getUsername() {
-
-    let urlParams = new URLSearchParams(document.location.search);
-    let username = urlParams.get("username");
+    let username = document.getElementById('username').value;
     console.log(username);
-    document.getElementById("username-area").textContent = username.toUpperCase();
-
+    localStorage.setItem("username", username);
 });
 
 // Quizz question List in an array of objects.
@@ -132,6 +129,7 @@ let questionsList = [
 
 // Variables 
 
+let name = document.getElementById('username-area');
 let subject = document.getElementById('subject');
 let questions = document.getElementById('question');
 let options = document.getElementById('options');
@@ -143,6 +141,7 @@ function displayQuestions() {
 
     let result = getRandomQuestions(questionsList);
 
+    name.innerHTML = (localStorage.username).toUpperCase();
     subject.innerHTML = result.subjects;
     questions.innerHTML = result.question;
     options.innerHTML = `
@@ -195,8 +194,9 @@ function getAnswers() {
     if (questionNumber != "8") {
         displayQuestions();
     } else {
-        alert("Game finished");
-        location.href = "quizz.html";
+        let result = document.getElementById("points").innerHTML;
+        localStorage.setItem('result', result);
+        location.href = "feedback.html";
     }
 
 }
@@ -210,7 +210,6 @@ function addToScore() {
 function displayImage() { };
 
 function displayFeedback() {
-
 
 };
 
