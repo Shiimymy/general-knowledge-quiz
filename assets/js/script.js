@@ -183,13 +183,13 @@ function displayNextQuestion(event) {
 
     } else {
         alert("Wrong Answer");
+
     }
     displayQuestions();
 }
 
 
 function getAnswers() {
-
 
 }
 
