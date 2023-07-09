@@ -179,6 +179,7 @@ function displayNextQuestion(event) {
     event.preventDefault();
     if (localStorage.correct == "true") {
         alert("Right Answer");
+        addToScore();
 
     } else {
         alert("Wrong Answer");
@@ -193,7 +194,10 @@ function getAnswers() {
 }
 
 
-function addToScore() { };
+function addToScore() {
+    let points = parseInt(document.getElementById("points").innerText);
+    document.getElementById("points").innerText = ++points;
+};
 
 function displayImage() { };
 
