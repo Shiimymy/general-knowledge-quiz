@@ -180,16 +180,23 @@ function displayNextQuestion(event) {
     if (localStorage.correct == "true") {
         alert("Right Answer");
         addToScore();
+        getAnswers();
 
     } else {
         alert("Wrong Answer");
-
+        getAnswers();
     }
-    displayQuestions();
 }
 
 
 function getAnswers() {
+    let questionNumber = parseInt(document.getElementById("questionNumber").innerText);
+    document.getElementById("questionNumber").innerText = ++questionNumber;
+    if (questionNumber != "8") {
+        displayQuestions();
+    } else {
+        alert("Game finished");
+    }
 
 }
 
