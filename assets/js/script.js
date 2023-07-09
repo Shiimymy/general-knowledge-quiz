@@ -196,6 +196,7 @@ function getAnswers() {
         displayQuestions();
     } else {
         alert("Game finished");
+        location.href = "quizz.html";
     }
 
 }
@@ -208,7 +209,10 @@ function addToScore() {
 
 function displayImage() { };
 
-function displayFeedback() { };
+function displayFeedback() {
+
+
+};
 
 
 
