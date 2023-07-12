@@ -134,3 +134,113 @@ a {
 #exit:hover {
     background-color: #2049692a;
 }
+
+/*Media queries */
+
+@media screen and (max-width: 1200px) {
+
+    #welcome {
+        margin: 9em 10em;
+    }
+
+    #quizz-content-area {
+
+        margin: 7rem 10rem;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+
+    #welcome {
+        margin: 10em 10em;
+    }
+
+    #quizz-content-area {
+
+        margin: 8rem 10rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #welcome {
+        padding: 2em;
+        margin: 11rem 10rem;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 5px 0;
+    }
+
+    #quizz-content-area {
+        margin: 7.5rem 8rem;
+    }
+
+    a {
+        display: block;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 545px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #welcome {
+        margin: 11rem 3rem;
+    }
+
+    #quizz-content-area {
+        margin: 7.5rem 3rem;
+    }
+
+    #end-message {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    a {
+        font-size: 0.7em;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    #welcome {
+        margin: 7rem 0.5rem;
+    }
+
+    #quizz-content-area {
+        margin: 7rem 0.5rem;
+    }
+
+    #score-area {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    #quizz-area {
+        font-size: 0.9em;
+    }
+
+    ul {
+        text-align: left;
+    }
+
+}
