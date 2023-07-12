@@ -145,7 +145,6 @@ function displayQuestions() {
 
     let result = getRandomQuestions(questionsList);
 
-    name.innerHTML = (localStorage.username).toUpperCase();
     subject.innerHTML = result.subjects;
     questions.innerHTML = result.question;
     options.innerHTML = `
