@@ -22,16 +22,19 @@ h3 {
     border-radius: 5px;
 }
 
+
 /*Welcome page */
 
 #welcome {
-    padding: 2rem 1rem;
-    margin: 13rem 15rem;
+    padding: 1.5rem 1rem;
+    margin: 8.7em 10em;
 }
+
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0rem;
+
 }
 
 #welcome div {
@@ -51,7 +54,8 @@ input[type=text]:hover {
 }
 
 
-input[type=submit] {
+input[type=submit],
+.btn {
     margin-top: 1.5rem;
     padding: 0.5rem 1.5rem;
     background-color: #204969;
@@ -61,8 +65,9 @@ input[type=submit] {
     box-shadow: 1.5px 1.5px #2049696a;
 }
 
-input[type=submit]:hover {
-    border: 1px solid 204969;
+input[type=submit]:hover,
+.btn:hover {
+    border: #204969 1px solid;
     background-color: #fff7f7;
     color: #204969;
     transition: 1s;
@@ -72,19 +77,19 @@ input[type=submit]:hover {
 /* Quizz page */
 
 #quizz-content-area {
-    margin: 1rem 3rem;
     padding: 1rem;
+    margin: 6.5rem 10rem;
 }
 
 #score-area {
     font-size: 1.3rem;
     border: #204969 1px dotted;
-    border-radius: 4px;
+    border-radius: 5px;
     margin: 0 25%;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
-#score-area p {
+#score {
     margin: 0;
     color: none;
 }
@@ -99,13 +104,14 @@ input[type=submit]:hover {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 li {
-    margin-bottom: 2px;
+    margin-bottom: 6px;
 }
 
-/*Feedback page */
+/* End message*/
 
 #end-message {
     margin-top: 1.5rem;
@@ -113,9 +119,15 @@ li {
     font-size: 1.5em;
 }
 
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
 #exit {
     background-color: #fff7f7;
-    border-color: #204969;
     color: #204969;
 }
 
