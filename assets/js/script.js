@@ -150,7 +150,7 @@ function displayQuestions() {
     questions.innerHTML = result.question;
     options.innerHTML = `
        <li> 
-          <input type="radio" name="answer" id="answer-1" class="radio" value="${result.answers[0].isCorrect}">
+          <input type="radio" name="answer" id="answer-1" class="radio" value="${result.answers[0].isCorrect}" required>
           <label for"answer-1">${result.answers[0].text}</label>
        </li>
        <li>
