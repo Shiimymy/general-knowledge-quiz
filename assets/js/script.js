@@ -198,7 +198,7 @@ function getAnswers() {
     } else {
         let result = document.getElementById("points").innerHTML;
         localStorage.setItem('result', result);
-        location.href = "feedback.html";
+        displayFeedback();
     }
 
 }
