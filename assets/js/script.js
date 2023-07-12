@@ -138,6 +138,7 @@ let questions = document.getElementById('question');
 let options = document.getElementById('options');
 let radios = document.getElementsByClassName("radio");
 let submit = document.getElementById('submit');
+let chosenQuestion = [];
 
 
 function displayQuestions() {
@@ -173,9 +174,16 @@ function displayQuestions() {
 }
 displayQuestions();
 
-function getRandomQuestions(questionsList) {
-    return questionsList[Math.floor(Math.random() * questionsList.length)];
 
+
+function getRandomQuestions() {
+
+    let randomIndex = Math.floor(Math.random() * questionsList.length);
+    var randomQuestion = questionsList[randomIndex];
+    questionsList.splice(randomIndex, 1);
+    chosenQuestion.push(randomQuestion);
+
+    return randomQuestion;
 }
 
 function displayNextQuestion(event) {
