@@ -211,7 +211,6 @@ function addToScore() {
     document.getElementById("points").innerText = ++points;
 };
 
-function displayImage() { };
 
 function displayFeedback() {
     document.getElementById("quizz-area").style.display = "none";
