@@ -167,8 +167,8 @@ function displayQuestions() {
         radios[i].onclick = function () {
             localStorage.setItem('correct', this.value);
             submit.addEventListener("click", displayNextQuestion);
-        };
 
+        };
     }
 }
 displayQuestions();
