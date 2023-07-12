@@ -242,6 +242,15 @@ function displayFeedback() {
     }
 };
 
+function restartGame() {
+    window.location.href = "index.html";
+}
+
+function exitGame() {
+    alert("Thanks for playing!👋");
+    window.location.href = "https//wwww.google.com";
+}
+
 
 
 
