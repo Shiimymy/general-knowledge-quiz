@@ -132,7 +132,6 @@ let questionsList = [
 
 // Variables 
 
-let name = document.getElementById('username-area');
 let subject = document.getElementById('subject');
 let questions = document.getElementById('question');
 let options = document.getElementById('options');
@@ -213,7 +212,34 @@ function addToScore() {
 function displayImage() { };
 
 function displayFeedback() {
+    document.getElementById("quizz-area").style.display = "none";
+    document.getElementById("end-message").style.display = "";
 
+    let score = document.getElementById("points").innerHTML;
+    let feedback = document.getElementById("feedback");
+
+    if (score < 4) {
+        console.log("bad");
+        feedback.innerHTML =
+            `You will do better next time...
+        <br>
+        🫤
+        `;
+    } else if (score < 7) {
+        console.log("Good");
+        feedback.innerHTML =
+            `You did well.
+        <br>
+        🙂
+        `;
+    } else {
+        console.log("Excellent !");
+        feedback.innerHTML =
+            `You did great !
+        <br>
+        😀
+        `;
+    }
 };
 
 
