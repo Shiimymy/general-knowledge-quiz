@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
     let urlParams = new URLSearchParams(document.location.search);
     let username = urlParams.get("username");
     console.log(username);
+    localStorage.setItem("username", username);
     document.getElementById("username-area").textContent = username.toUpperCase();
     document.getElementById("username-final").textContent = username;
 });
@@ -244,7 +245,7 @@ function displayFeedback() {
 };
 
 function restartGame() {
-    window.location.href = "index.html";
+    window.location.href = `quizz.html?username=${localStorage.username}`;
 }
 
 function exitGame() {
