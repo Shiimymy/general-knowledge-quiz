@@ -141,6 +141,8 @@ let submit = document.getElementById('submit');
 
 function displayQuestions() {
 
+    document.getElementById("end-message").style.display = "none";
+
     let result = getRandomQuestions(questionsList);
 
     name.innerHTML = (localStorage.username).toUpperCase();
