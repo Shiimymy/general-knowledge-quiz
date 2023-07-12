@@ -2,9 +2,12 @@
 // Get username to display in quizz.html
 
 document.addEventListener("DOMContentLoaded", function getUsername() {
-    let username = document.getElementById('username').value;
+
+    let urlParams = new URLSearchParams(document.location.search);
+    let username = urlParams.get("username");
     console.log(username);
-    localStorage.setItem("username", username);
+    document.getElementById("username-area").textContent = username.toUpperCase();
+    document.getElementById("username-final").textContent = username;
 });
 
 // Quizz question List in an array of objects.
