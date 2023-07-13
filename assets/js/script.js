@@ -11,6 +11,31 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
     document.getElementById("username-final").textContent = username;
 });
 
+// Game description 
+
+let icon = document.getElementById('icon');
+
+function showDescription() {
+    let description = document.createElement('div');
+    description.innerHTML =
+        ` <p id="description">
+        This is a General knowledge Quizz wich will test you on 8 different subjects.
+        <br>
+        Don't hesitate to play again to access new questions ! 📜
+        </p>`
+        ;
+    description.style.fontSize = "15px";
+    description.style.letterSpacing = "1px";
+    icon.appendChild(description);
+}
+icon.addEventListener("mouseenter", showDescription);
+
+function hideDescription() {
+    let description = document.getElementById('description');
+    description.remove();
+}
+icon.addEventListener("mouseleave", hideDescription);
+
 // Quizz question List in an array of objects.
 
 let questionsList = [
