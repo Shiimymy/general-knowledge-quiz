@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
     document.getElementById("username-final").textContent = username;
 });
 
-// Game description 
+// Game description when icon hovered
 
 let icon = document.getElementById('icon');
 
@@ -165,9 +165,17 @@ let radios = document.getElementsByClassName("radio");
 let submit = document.getElementById('submit');
 let chosenQuestion = [];
 
+/**
+ * Display a new question in the DOM
+ * and its answers options,
+ * then with a loop check the "correct" value
+ * and send it to the local Storage.
+ */
+
 
 function displayQuestions() {
 
+    //Hide end message.
     document.getElementById("end-message").style.display = "none";
 
     let result = getRandomQuestions(questionsList);
@@ -199,7 +207,7 @@ function displayQuestions() {
 }
 displayQuestions();
 
-
+// Get a random question from the question list array
 
 function getRandomQuestions() {
 
@@ -210,6 +218,12 @@ function getRandomQuestions() {
 
     return randomQuestion;
 }
+
+/**
+ * Get the value from local storage, 
+ * Get the current score from the DOM and increments it by 1 if true, 
+ * Then display another question.
+ */
 
 function displayNextQuestion(event) {
     event.preventDefault();
@@ -224,6 +238,15 @@ function displayNextQuestion(event) {
     }
 }
 
+function addToScore() {
+    let points = parseInt(document.getElementById("points").innerText);
+    document.getElementById("points").innerText = ++points;
+};
+
+/**
+ * Check the answer number in the DOM,
+ * then return the appropriate function
+ */
 
 function getAnswers() {
     let questionNumber = parseInt(document.getElementById("questionNumber").innerText);
@@ -238,12 +261,10 @@ function getAnswers() {
 
 }
 
-
-function addToScore() {
-    let points = parseInt(document.getElementById("points").innerText);
-    document.getElementById("points").innerText = ++points;
-};
-
+/**
+ * Display feedback in the end message,
+ * and check the score to show the appropriate one.
+ */
 
 function displayFeedback() {
     document.getElementById("quizz-area").style.display = "none";
