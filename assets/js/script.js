@@ -19,7 +19,7 @@ function showDescription() {
     let description = document.createElement('div');
     description.innerHTML =
         ` <p id="description">
-        This is a General knowledge Quizz wich will test you on 8 different subjects.
+        This is a General knowledge Quizz wich will test you on 7 different subjects.
         <br>
         Don't hesitate to play again to access new questions ! 📜
         </p>`
