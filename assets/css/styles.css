@@ -16,9 +16,27 @@ h3 {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+
 .background {
     background: #fff7f7;
     border-radius: 5px;
+}
+
+i:hover {
+    color: #5853bc;
+}
+
+#description {
+    color: #204969;
+    border: 1px solid #204969;
+    border-radius: 5px;
+    width: 250px;
+    padding: 2px;
+    line-height: 20px;
 }
 
 
@@ -27,13 +45,6 @@ h3 {
 #welcome {
     padding: 1.5rem 1rem;
     margin: 8.7em 10em;
-}
-
-
-h1 {
-    font-size: 3rem;
-    margin: 1rem 0rem;
-
 }
 
 #welcome div {
