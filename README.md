@@ -1,10 +1,14 @@
 # Genenal Knowledge Quizz
 
+
+
 ## Features
 
 ## Testing
 
 ### Manual Testing
+
+css : responsiveness
 
 ### Validator Testing
 
