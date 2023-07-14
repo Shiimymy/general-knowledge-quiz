@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-bottom: 200px ;
+    padding-bottom: 300px ;
 }
 
 h1,
@@ -148,10 +148,11 @@ a {
 
 /*Media queries */
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 1300px) {
 
     body {
-        padding-bottom: 430px ;
+        padding-bottom: 50px ;
     }
 
     #welcome {
@@ -167,7 +168,7 @@ a {
 
 @media screen and (max-width: 920px) {
     body {
-        padding-bottom: 460px ;
+        padding-bottom: 400px ;
     }
 
     #welcome {
