@@ -214,6 +214,7 @@ function displayQuestions() {
     for (var i = 0, max = radios.length; i < max; i++) {
         radios[i].onclick = function () {
             localStorage.setItem('correct', this.value);
+            localStorage.setItem("correctAnswer", result.correct);
             submit.addEventListener("click", displayNextQuestion);
 
         };
@@ -241,13 +242,17 @@ function getRandomQuestions() {
 
 function displayNextQuestion(event) {
     event.preventDefault();
+    let result = getRandomQuestions(questionsList);
     if (localStorage.correct == "true") {
         alert("Right Answer");
         addToScore();
         getAnswers();
 
     } else {
-        alert("Wrong Answer");
+        alert(`
+        Wrong Answer !
+        The correct answer is : ${localStorage.correctAnswer}
+        `);
         getAnswers();
     }
 }
