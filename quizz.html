@@ -35,9 +35,9 @@
 
                 <p id="question"></p>
 
-                <ul id="options"></ul>
+                <ul id="options" aria-label="Select 1 answer"></ul>
 
-                <input type="submit" value="Submit" id="submit" data-type="submit" onclick="displayNextQuestion()">
+                <input type="submit" value="Submit" id="submit" data-type="submit" onclick="displayNextQuestion()" aria-label="Submit your selected answer">
             </form>
         </div>
 
@@ -47,8 +47,8 @@
             Thanks for Playing <span id="username-final"></span> !
             <p id="feedback"></p>
 
-            <a class="btn" id="restart" onclick="restartGame()">Restart Game</a>
-            <a class="btn" id="exit" onclick="exitGame()">Exit Game</a>
+            <a class="btn" id="restart" onclick="restartGame()" aria-label="Will create a new round of questions">Restart Game</a>
+            <a class="btn" id="exit" onclick="exitGame()" aria-label="Go to Google page">Exit Game</a>
         </div>
 
     </div>

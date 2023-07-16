@@ -113,8 +113,6 @@ This project will be also cloned to work localy on the future realesed by follow
 
 ## Credit
 
-
-
 ### Content
 
 ### Media
