@@ -89,11 +89,11 @@ I used [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to t
 
 * Index page performances :
 
-[Index page Performances](assets/images/performance-index.jpg)
+![Index page Performances](assets/images/performance-index.jpg)
 
 * Quiz page performances : 
 
-[Quiz page Performances](assets/images/performance-quiz.jpg)
+![Quiz page Performances](assets/images/performance-quiz.jpg)
 
 ## Deployment
 
@@ -112,6 +112,8 @@ This project will be also cloned to work localy on the future realesed by follow
 4. Press Enter to create the clone.
 
 ## Credit
+
+
 
 ### Content
 
