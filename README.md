@@ -1,8 +1,11 @@
-# Let's Test you !
+# LET'S TEST YOU!
 
 This is a **quiz on general knowledge** website that enable the users to test themselves on 8 different topics: History, Geography, Geopolitics, Economy, Nature, English and Psychology. The user can replay he game and have other questions displayed. It will be useful for the user to test his general knowledge or even learn.
 
-Project URL : [link](https://shiimymy.github.io/general-knowledge-quizz/)
+![Responsive-Screens](assets/images/responsive-screens.jpg)
+
+
+Project URL : [Let's Test You!](https://shiimymy.github.io/general-knowledge-quizz/)
 
 ## Features
 
