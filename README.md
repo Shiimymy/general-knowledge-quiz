@@ -117,4 +117,11 @@ This project will be also cloned to work localy on the future realesed by follow
 
 ### Content
 
+* The question mark icon was taken from [Font Awesome](https://fontawesome.com/),
+* The understanding of how a basic quiz using JS is build was found on [Geeks for Geeks](https://www.geeksforgeeks.org/),
+* Instructions to know how to use the localStorage property were taken from [MDN](https://developer.mozilla.org/), 
+* The instructions to add points to score were founds on [Love Maths Project](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master).
+
 ### Media
+
+The [Background image](https://www.pexels.com/fr-fr/photo/femme-en-rouge-a-manches-longues-ecrit-sur-tableau-noir-3769714/) has been taken from [Pexels](https://www.pexels.com/).

@@ -322,7 +322,7 @@ function restartGame() {
 
 function exitGame() {
     alert("Thanks for playing!👋");
-    window.location.assign("https//wwww.google.com");
+    location.replace = "https//wwww.google.com";
 }
 
 
