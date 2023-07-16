@@ -303,7 +303,7 @@ function restartGame() {
 
 function exitGame() {
     alert("Thanks for playing!👋");
-    window.location.href = "https//wwww.google.com";
+    window.location.assign("https//wwww.google.com");
 }
 
 

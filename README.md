@@ -76,7 +76,9 @@ I checked first and confirmed that the website was working on different browsers
 
 Through manual testing, I saw that the website was not responsive enough and I had to make some updates. I did some changes thanks to [Am I Responsive website](https://ui.dev/amiresponsive) as I didn't have acess to a bigger screen.
 
-I also realised that adding the informatin about which is the corect answer would need to be added when the user select the wrong option for a better user experience.
+Then, I saw that the button "Exit Game" was not working and updated the function code.
+
+I also realised that adding the informatin about which is the correct answer would need to be added when the user select the wrong option for a better user experience.
 
 ### Validator Testing
 
