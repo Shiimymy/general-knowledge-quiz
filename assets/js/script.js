@@ -45,7 +45,8 @@ let questionsList = [
         answers: [
             { text: "Christopher Columbus", isCorrect: false },
             { text: "Ferdinand Magellan", isCorrect: true },
-            { text: "Marco Polo", isCorrect: false }]
+            { text: "Marco Polo", isCorrect: false }],
+        correct : "Ferdinand Magellan",
 
     },
     {
@@ -55,7 +56,8 @@ let questionsList = [
             { text: "Tang dynasty", isCorrect: false },
             { text: "Qing dynasty", isCorrect: false },
             { text: "Ming Dynasty", isCorrect: true }
-        ]
+        ],
+        correct : "Ming Dynasty",
     },
     {
         subjects: "Geography",
@@ -63,7 +65,8 @@ let questionsList = [
         answers: [
             { text: "Algeria", isCorrect: true },
             { text: "The Democratic Republic of the Congo", isCorrect: false },
-            { text: "Madagascar", isCorrect: false }]
+            { text: "Madagascar", isCorrect: false }],
+            correct : "Algeria",
     },
     {
         subjects: "Geography",
@@ -71,7 +74,8 @@ let questionsList = [
         answers: [
             { text: "Riga", isCorrect: false },
             { text: "Vilnius", isCorrect: true },
-            { text: "Tallinn", isCorrect: false }]
+            { text: "Tallinn", isCorrect: false }],
+            correct : "Vilnius",
     },
     {
         subjects: "Geopolitics",
@@ -79,7 +83,8 @@ let questionsList = [
         answers: [
             { text: "The World Intellectual Property Organization", isCorrect: false },
             { text: "The Central Banks", isCorrect: false },
-            { text: "The World Trade Organization", isCorrect: true }]
+            { text: "The World Trade Organization", isCorrect: true }],
+            correct : "The World Trade Organization",
     },
     {
         subjects: "Geopolitics",
@@ -87,7 +92,8 @@ let questionsList = [
         answers: [
             { text: "Russia", isCorrect: false },
             { text: "Brazil", isCorrect: false },
-            { text: "Canada", isCorrect: true }]
+            { text: "Canada", isCorrect: true }],
+        correct : "Canada",
     },
     {
         subjects: "Economy",
@@ -95,7 +101,8 @@ let questionsList = [
         answers: [
             { text: "A monopoly", isCorrect: true },
             { text: "A monopsony", isCorrect: false },
-            { text: "A oligopoly", isCorrect: false }]
+            { text: "A oligopoly", isCorrect: false }],
+        correct : "A monopoly",
     },
     {
         subjects: "Economy",
@@ -103,7 +110,8 @@ let questionsList = [
         answers: [
             { text: "The rate at which the general level of prices for goods and services is rising and, subsequently, purchasing power is falling.", isCorrect: true },
             { text: "It refers to the total expenditure a firm incurs when utilizing economic resources to produce goods and services.", isCorrect: false },
-            { text: "It is the limited availability of resources for human consumption.", isCorrect: false }]
+            { text: "It is the limited availability of resources for human consumption.", isCorrect: false }],
+        correct : "The rate at which the general level of prices for goods and services is rising and, subsequently, purchasing power is falling.",
     },
     {
         subjects: "Nature",
@@ -111,15 +119,17 @@ let questionsList = [
         answers: [
             { text: "The Elephant", isCorrect: false },
             { text: "The Hippopotamus", isCorrect: false },
-            { text: "The Blue whale", isCorrect: true }]
+            { text: "The Blue whale", isCorrect: true }],
+        correct : "The Blue whale",
     },
     {
         subjects: "Nature",
         question: "What is the name of the largest desert in Asia?",
         answers: [
-            { text: "Central Asia Desert", isCorrect: false },
-            { text: "Sahara Desert", isCorrect: false },
-            { text: "Gobi Desert", isCorrect: true }]
+            { text: "The Central Asia Desert", isCorrect: false },
+            { text: "The Sahara Desert", isCorrect: false },
+            { text: "The Gobi Desert", isCorrect: true }],
+        correct : "The Gobi Desert",
     },
     {
         subjects: "English",
@@ -127,7 +137,8 @@ let questionsList = [
         answers: [
             { text: "The use of unnecessary words to express an idea.", isCorrect: false },
             { text: "A large or excessive amount of something.", isCorrect: true },
-            { text: "The state of being without or not having enough of something.", isCorrect: false }]
+            { text: "The state of being without or not having enough of something.", isCorrect: false }],
+        correct : "A large or excessive amount of something.",
     },
     {
         subjects: "English",
@@ -135,7 +146,8 @@ let questionsList = [
         answers: [
             { text: "Charlotte Brontë", isCorrect: false },
             { text: "Jane Austen", isCorrect: true },
-            { text: "Agatha Christie", isCorrect: false }]
+            { text: "Agatha Christie", isCorrect: false }],
+        correct : "Jane Austen",
     },
     {
         subjects: "Psychology",
@@ -143,7 +155,8 @@ let questionsList = [
         answers: [
             { text: "A type of advertising technique that aims to convince people to do something because everyone else is doing it.", isCorrect: true },
             { text: "A technique which involves using words that sound impressive but don’t actually mean anything.", isCorrect: false },
-            { text: "A technique that involves using celebrities or other well-known figures to promote a product or service.", isCorrect: false }]
+            { text: "A technique that involves using celebrities or other well-known figures to promote a product or service.", isCorrect: false }],
+        correct : "A type of advertising technique that aims to convince people to do something because everyone else is doing it.",
     },
     {
         subjects: "Psychology",
@@ -151,7 +164,8 @@ let questionsList = [
         answers: [
             { text: "American Psychology", isCorrect: true },
             { text: "Developmental psychology", isCorrect: false },
-            { text: "Social psychology", isCorrect: false }]
+            { text: "Social psychology", isCorrect: false }],
+        correct : "American Psychology",
     },
 
 ];

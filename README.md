@@ -78,12 +78,12 @@ Through manual testing, I saw that the website was not responsive enough and I h
 
 Then, I saw that the button "Exit Game" was not working and updated the function code.
 
-I also realised that adding the informatin about which is the correct answer would need to be added when the user select the wrong option for a better user experience.
+I also realised that adding the information about which is the correct answer would need to be added when the user select the wrong option for a better user experience.
 
 ### Validator Testing
 
 * HTML Testing : 1 error found with [W3C Validator](https://validator.w3.org/) in the text input of the first page as I used "min" attribute which in now deleted.
-* CSS Testing : 1 error found with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator) as I used "none" instead of "transparent" as a value after a color property. It is now changed.
+* CSS Testing : 1 error found with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator) as I used "none" instead of an actual color as a value after a color property. It is now changed.
 
 ### Performance Testing
 
