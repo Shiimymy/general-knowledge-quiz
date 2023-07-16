@@ -97,6 +97,20 @@ I used [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to t
 
 ## Deployment
 
+* **Fork template** : The first step before coding was to fork the [ci-full-template](https://github.com/Code-Institute-Org/ci-full-template) from [Code Institute](https://codeinstitute.net/ie/) as asked. 
+To do so, once on the ci-full-template in Github (as per the first link), I clicked on **Fork** on the top-right of the page. Then I renamed the repository with the name of my project under **Repository name** and clicked to **Create Fork**. This allowed me to update the template.
+
+* **Project deployment** : Once the site was nearly ready, it was deployed thanks to [Github](https://github.com/) from the [general-knowledge-quizz repository](https://github.com/Shiimymy/general-knowledge-quizz). Once in the repository, I clicked on **Settings** in the top navigation bar, then on Pages in the left menu. Once the page opened, in the Branch section, I chose main in the drop down menu and clicked on **Save**.
+
+* **Clone project** :
+
+This project will be also cloned to work localy on the future realesed by following these setps :
+
+1. Go in [General Knowledge Quizz](https://github.com/Shiimymy/general-knowledge-quizz) repository,
+2. Click on Code to find the URL and copy it.
+3. In the Terminal write git clone and paste the url.
+4. Press Enter to create the clone.
+
 ## Credit
 
 ### Content
