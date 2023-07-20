@@ -91,13 +91,6 @@ With the End message, two buttons will be displayed. The user will have the choi
 | Exit Game | The Exit Game button redirect the user to www.google.com | YES |
 
 
-
-Through manual testing, I saw that the website was not responsive enough and I had to make some updates. I did some changes thanks to [Am I Responsive website](https://ui.dev/amiresponsive) as I didn't have acess to a bigger screen.
-
-Then, I saw that the button "Exit Game" was not working and updated the function code.
-
-I also realised that adding the information about which is the correct answer would need to be added when the user select the wrong option for a better user experience.
-
 ### Validator Testing
 
 * HTML Testing : 1 error found with [W3C Validator](https://validator.w3.org/) in the text input of the first page as I used "min" attribute which in now deleted.
@@ -114,6 +107,16 @@ I used [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to t
 * Quiz page performances : 
 
 ![Quiz page Performances](assets/images/performance-quiz.jpg)
+
+### Fixed issues 
+
+| Issues | Description | Steps done to fix |
+| --- | ---- | ---- |
+| Responsivness | Website not responsive on big screens | Changes done thanks to [Am I Responsive website](https://ui.dev/amiresponsive) as I didn't have acess to a bigger screen. |
+| Exit Game | Exit Game button giving 404 error | Delete function and add href in the link to redirect user |
+| User experience | User didn't know the correct answer when choosing a wrong option | Add message when answer is submitted |
+| Score color | The content was transparent | Update color in css to make the content visible |
+
 
 ## Deployment
 
