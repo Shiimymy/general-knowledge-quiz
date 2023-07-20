@@ -289,25 +289,19 @@ function displayFeedback() {
     let feedback = document.getElementById("feedback");
 
     if (score < 4) {
-        console.log("bad");
         feedback.innerHTML =
-            `You will do better next time...
-        <br>
-        🫤
+            ` <p>You will do better next time...</p>
+        <img src="assets/images/bad.jpg" alt="disappointed woman">
         `;
     } else if (score < 7) {
-        console.log("Good");
         feedback.innerHTML =
-            `You did well.
-        <br>
-        🙂
+            `<p>You did well.</p>
+        <img src="assets/images/good.jpg" alt="thumb up">
         `;
     } else {
-        console.log("Excellent !");
         feedback.innerHTML =
-            `You did great !
-        <br>
-        😀
+            `<p>You did great !</p>
+        <img src="assets/images/congrats.jpg" alt="graduation hat flying in the air">
         `;
     }
 };
