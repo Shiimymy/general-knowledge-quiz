@@ -131,6 +131,12 @@ li {
     font-size: 1.5em;
 }
 
+img {
+    width: 50%;
+    border: 2px solid #204969;
+    border-radius: 50%;
+}
+
 a {
     text-decoration: none;
     font-size: 1rem;
