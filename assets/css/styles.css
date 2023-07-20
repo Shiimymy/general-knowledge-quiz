@@ -126,12 +126,11 @@ li {
 button {
     background-color: transparent;
     color: #204969;
-    margin-top: 1.5rem;
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
     letter-spacing: 2px;
-    box-shadow: 1.5px 1.5px #2049696a;
-    font-weight: 700;
+    box-shadow: 2px 1.5px #2049696a;
+    font-weight: 600;
 }
 
 /* End message*/
