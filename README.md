@@ -93,8 +93,8 @@ With the End message, two buttons will be displayed. The user will have the choi
 
 ### Validator Testing
 
-* HTML Testing: 1 error found with [W3C Validator](https://validator.w3.org/) in the text input of the first page as I used "min" attribute which in now deleted.
-* CSS Testing: 1 error found with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator) as I used "none" instead of an actual colour as a value after a colour property. It is now changed.
+* HTML Testing: no error found with [W3C Validator](https://validator.w3.org/).
+* CSS Testing: no error found with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
 
 ### Performance Testing
 
