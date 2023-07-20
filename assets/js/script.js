@@ -14,25 +14,21 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
 // Game description when icon hovered
 
 let icon = document.getElementById('icon');
+let description = document.getElementById('description');
+description.style.display= "none";
+
 
 function showDescription() {
-    let description = document.createElement('div');
-    description.innerHTML =
-        ` <p id="description">
-        This is a General knowledge Quizz wich will test you on 7 different subjects.
-        <br>
-        Don't hesitate to play again to access new questions ! 📜
-        </p>`
-        ;
-    description.style.fontSize = "15px";
+    description.style.display = "";
+    description.style.fontSize = "13px";
     description.style.letterSpacing = "1px";
-    icon.appendChild(description);
+    description.style.margin = "auto";
 }
 icon.addEventListener("mouseenter", showDescription);
 
 function hideDescription() {
-    let description = document.getElementById('description');
-    description.remove();
+    description.style.display = "none";
+    
 }
 icon.addEventListener("mouseleave", hideDescription);
 
