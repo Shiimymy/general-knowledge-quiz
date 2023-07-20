@@ -310,10 +310,6 @@ function restartGame() {
     window.location.href = `quizz.html?username=${localStorage.username}`;
 }
 
-function exitGame() {
-    alert("Thanks for playing!👋");
-    location.replace = "https//wwww.google.com";
-}
 
 
 
