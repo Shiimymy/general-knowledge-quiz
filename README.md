@@ -116,7 +116,7 @@ I used [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to t
 | Exit Game | Exit Game button giving 404 error | Delete function and add href in the link to redirect user |
 | User experience | User didn't know the correct answer when choosing a wrong option | Add message when answer is submitted |
 | Score colour | The content was transparent | Update colour in css to make the content visible |
-
+| Input Attribute | In the text input of the first page was "min" attribute | It is now deleted |
 
 ## Deployment
 
