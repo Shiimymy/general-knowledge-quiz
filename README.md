@@ -76,35 +76,35 @@ With the End message, two buttons will be displayed. The user will have the choi
 | ---- | ---- | --- |
 | Cross Browser Testing | The Website is working on Google Chrome, Microsoft Edge, and Firefox. | YES |
 | Page loading | The pages load correctly with content at the right position | YES |
-| Username Form | The form can't be subimited without an username and redirect to quizz.html | YES |
+| Username Form | The form can't be submitted without an username and redirect to quizz.html | YES |
 | Question mark icon | When the icon is hover, the description appear and disappear when mouse leave | YES |
 | Username display | The username enter in the first form is displayed in the h1 of quizz.html | YES |
-| Answer submition | Only one answer can be selected and submit at a time | YES |
-| Answer display | Once the answer is submited, a message appear to let know if the answer is correct | YES |
+| Answer submission | Only one answer can be selected and submit at a time | YES |
+| Answer display | Once the answer is submitted, a message appear to let know if the answer is correct | YES |
 | Point add | When the answer is correct, a point is added to the score | YES |
 | Next Question button | This button appears with the answer and when clicked a new question is displayed | YES |
 | Random Question | The new Question is a random question taken from the array with no repeat | YES |
 | Round stop | A round is 7 questions only | YES |
 | Thanks User | The thanks message is customized with username | YES |
 | Feedback display | A different feedback is displayed depending on the score | YES |
-| Resart Game | The button restart game start a new round | YES |
+| Restart Game | The button restart game start a new round | YES |
 | Exit Game | The Exit Game button redirect the user to www.google.com | YES |
 
 
 ### Validator Testing
 
-* HTML Testing : 1 error found with [W3C Validator](https://validator.w3.org/) in the text input of the first page as I used "min" attribute which in now deleted.
-* CSS Testing : 1 error found with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator) as I used "none" instead of an actual color as a value after a color property. It is now changed.
+* HTML Testing: 1 error found with [W3C Validator](https://validator.w3.org/) in the text input of the first page as I used "min" attribute which in now deleted.
+* CSS Testing: 1 error found with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator) as I used "none" instead of an actual colour as a value after a colour property. It is now changed.
 
 ### Performance Testing
 
-I used [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to test the performances of my 2 pages. The results were positive, as scores were between 90 and 93. Please find the result below at the time of the tests :
+I used [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to test the performances of my 2 pages. The results were positive, as scores were between 90 and 93. Please find the result below at the time of the tests:
 
-* Index page performances :
+* Index page performances:
 
 ![Index page Performances](assets/images/performance-index.jpg)
 
-* Quiz page performances : 
+* Quiz page performances: 
 
 ![Quiz page Performances](assets/images/performance-quiz.jpg)
 
@@ -112,22 +112,22 @@ I used [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to t
 
 | Issues | Description | Steps done to fix |
 | --- | ---- | ---- |
-| Responsivness | Website not responsive on big screens | Changes done thanks to [Am I Responsive website](https://ui.dev/amiresponsive) as I didn't have acess to a bigger screen. |
+| Responsiveness | Website not responsive on big screens | Changes done thanks to [Am I Responsive website](https://ui.dev/amiresponsive) as I didn't have access to a bigger screen. |
 | Exit Game | Exit Game button giving 404 error | Delete function and add href in the link to redirect user |
 | User experience | User didn't know the correct answer when choosing a wrong option | Add message when answer is submitted |
-| Score color | The content was transparent | Update color in css to make the content visible |
+| Score colour | The content was transparent | Update colour in css to make the content visible |
 
 
 ## Deployment
 
-* **Fork template** : The first step before coding was to fork the [ci-full-template](https://github.com/Code-Institute-Org/ci-full-template) from [Code Institute](https://codeinstitute.net/ie/) as asked. 
+* **Fork template**: The first step before coding was to fork the [ci-full-template](https://github.com/Code-Institute-Org/ci-full-template) from [Code Institute](https://codeinstitute.net/ie/) as asked. 
 To do so, once on the ci-full-template in Github (as per the first link), I clicked on **Fork** on the top-right of the page. Then I renamed the repository with the name of my project under **Repository name** and clicked to **Create Fork**. This allowed me to update the template.
 
-* **Project deployment** : Once the site was nearly ready, it was deployed thanks to [Github](https://github.com/) from the [general-knowledge-quizz repository](https://github.com/Shiimymy/general-knowledge-quizz). Once in the repository, I clicked on **Settings** in the top navigation bar, then on Pages in the left menu. Once the page opened, in the Branch section, I chose main in the drop down menu and clicked on **Save**.
+* **Project deployment**: Once the site was nearly ready, it was deployed thanks to [Github](https://github.com/) from the [general-knowledge-quizz repository](https://github.com/Shiimymy/general-knowledge-quizz). Once in the repository, I clicked on **Settings** in the top navigation bar, then on Pages in the left menu. Once the page opened, in the Branch section, I chose main in the drop down menu and clicked on **Save**.
 
-* **Clone project** :
+* **Clone project**:
 
-This project will be also cloned to work localy on the future realesed by following these setps :
+This project will be also cloned to work locally on the future realesed by following these setps:
 
 1. Go in [General Knowledge Quizz](https://github.com/Shiimymy/general-knowledge-quizz) repository,
 2. Click on Code to find the URL and copy it.
