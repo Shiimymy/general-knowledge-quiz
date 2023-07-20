@@ -34,10 +34,14 @@ i:hover {
 #description {
     color: #204969;
     border: 1px solid #204969;
+    background-color: #fff7f7;
     border-radius: 5px;
     width: 250px;
     padding: 2px;
     line-height: 20px;
+    position: absolute;
+    top : 70px;
+    
 }
 
 
@@ -97,7 +101,7 @@ input[type=submit]:hover,
     font-size: 1.3rem;
     border: #204969 1px dotted;
     border-radius: 5px;
-    margin: 0 25%;
+    margin: 5px 25%;
     padding: 0.5rem;
 }
 
