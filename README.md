@@ -146,3 +146,8 @@ This project will be also cloned to work localy on the future realesed by follow
 ### Media
 
 The [Background image](https://www.pexels.com/fr-fr/photo/femme-en-rouge-a-manches-longues-ecrit-sur-tableau-noir-3769714/) has been taken from [Pexels](https://www.pexels.com/).
+
+The images in the feedback have been take from [Pexels](https://www.pexels.com/) too : 
+* [Bad score](https://www.pexels.com/fr-fr/photo/femme-melancolique-regarder-une-video-sur-un-ordinateur-portable-a-la-maison-3808012/),
+* [Good Score](https://www.pexels.com/fr-fr/photo/personne-faisant-les-pouces-vers-le-haut-193821/),
+* [Excellent Score](https://www.pexels.com/fr-fr/photo/photographie-de-personnes-diplomees-1205651/).
