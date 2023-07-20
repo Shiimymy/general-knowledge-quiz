@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function getUsername() {
 
     let urlParams = new URLSearchParams(document.location.search);
     let username = urlParams.get("username");
-    console.log(username);
     localStorage.setItem("username", username);
     document.getElementById("username-area").textContent = username.toUpperCase();
     document.getElementById("username-final").textContent = username;
@@ -235,7 +234,7 @@ function getRandomQuestions() {
 /**
  * Get the value from local storage, 
  * Get the current score from the DOM and increments it by 1 if true, 
- * Then display another question.
+ * Then display if answer is Right or Wrong with the button Next Question.
  */
 
 function displayNextQuestion(event) {
@@ -244,7 +243,7 @@ function displayNextQuestion(event) {
     if (localStorage.correct == "true") {
         document.getElementById("answer-feedback").style.display = "";
         document.getElementById("submit").style.display = "none";
-        theAnswer.innerHTML = "Right Answer";
+        theAnswer.innerHTML = "Right Answer!";
         document.getElementById("theAnswer").style.color = "green";
         document.getElementById("theAnswer").style.fontWeight = "700";
         addToScore();
@@ -253,7 +252,7 @@ function displayNextQuestion(event) {
         document.getElementById("answer-feedback").style.display = "";
         document.getElementById("submit").style.display = "none";
         theAnswer.innerHTML = `
-        Wrong Answer !
+        Wrong Answer!
         The correct answer is : ${localStorage.correctAnswer}
         `;
         document.getElementById("theAnswer").style.color = "red";
