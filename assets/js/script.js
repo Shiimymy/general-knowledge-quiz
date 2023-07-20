@@ -259,6 +259,7 @@ function displayNextQuestion(event) {
         document.getElementById("theAnswer").style.color = "red";
         document.getElementById("theAnswer").style.fontWeight = "700";
     }
+    next.addEventListener("click", getAnswers);
 }
 
 function addToScore() {
@@ -276,6 +277,7 @@ function getAnswers() {
     document.getElementById("questionNumber").innerText = ++questionNumber;
     if (questionNumber != "8") {
         displayQuestions();
+        document.getElementById("submit").style.display = "";
     } else {
         let result = document.getElementById("points").innerHTML;
         localStorage.setItem('result', result);
@@ -291,6 +293,7 @@ function getAnswers() {
 
 function displayFeedback() {
     document.getElementById("quizz-area").style.display = "none";
+    document.getElementById("answer-feedback").style.display = "none";
     document.getElementById("end-message").style.display = "";
 
     let score = document.getElementById("points").innerHTML;
