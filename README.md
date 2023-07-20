@@ -72,7 +72,25 @@ With the End message, two buttons will be displayed. The user will have the choi
 
 ### Manual Testing
 
-I checked first and confirmed that the website was working on different browsers : Google Chrome, Microsoft Edge, and Firefox.
+| Test | Expected result | Passed |
+| ---- | ---- | --- |
+| Cross Browser Testing | The Website is working on Google Chrome, Microsoft Edge, and Firefox. | YES |
+| Page loading | The pages load correctly with content at the right position | YES |
+| Username Form | The form can't be subimited without an username and redirect to quizz.html | YES |
+| Question mark icon | When the icon is hover, the description appear and disappear when mouse leave | YES |
+| Username display | The username enter in the first form is displayed in the h1 of quizz.html | YES |
+| Answer submition | Only one answer can be selected and submit at a time | YES |
+| Answer display | Once the answer is submited, a message appear to let know if the answer is correct | YES |
+| Point add | When the answer is correct, a point is added to the score | YES |
+| Next Question button | This button appears with the answer and when clicked a new question is displayed | YES |
+| Random Question | The new Question is a random question taken from the array with no repeat | YES |
+| Round stop | A round is 7 questions only | YES |
+| Thanks User | The thanks message is customized with username | YES |
+| Feedback display | A different feedback is displayed depending on the score | YES |
+| Resart Game | The button restart game start a new round | YES |
+| Exit Game | The Exit Game button redirect the user to www.google.com | YES |
+
+
 
 Through manual testing, I saw that the website was not responsive enough and I had to make some updates. I did some changes thanks to [Am I Responsive website](https://ui.dev/amiresponsive) as I didn't have acess to a bigger screen.
 
