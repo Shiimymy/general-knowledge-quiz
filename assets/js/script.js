@@ -173,6 +173,7 @@ let questions = document.getElementById('question');
 let options = document.getElementById('options');
 let radios = document.getElementsByClassName("radio");
 let submit = document.getElementById('submit');
+let next = document.getElementById('next');
 let chosenQuestion = [];
 
 /**
@@ -187,6 +188,7 @@ function displayQuestions() {
 
     //Hide end message.
     document.getElementById("end-message").style.display = "none";
+    document.getElementById("answer-feedback").style.display = "none";
 
     let result = getRandomQuestions(questionsList);
 
@@ -238,18 +240,24 @@ function getRandomQuestions() {
 
 function displayNextQuestion(event) {
     event.preventDefault();
-    let result = getRandomQuestions(questionsList);
+    let theAnswer = document.getElementById('theAnswer');
     if (localStorage.correct == "true") {
-        alert("Right Answer");
+        document.getElementById("answer-feedback").style.display = "";
+        document.getElementById("submit").style.display = "none";
+        theAnswer.innerHTML = "Right Answer";
+        document.getElementById("theAnswer").style.color = "green";
+        document.getElementById("theAnswer").style.fontWeight = "700";
         addToScore();
-        getAnswers();
 
     } else {
-        alert(`
+        document.getElementById("answer-feedback").style.display = "";
+        document.getElementById("submit").style.display = "none";
+        theAnswer.innerHTML = `
         Wrong Answer !
         The correct answer is : ${localStorage.correctAnswer}
-        `);
-        getAnswers();
+        `;
+        document.getElementById("theAnswer").style.color = "red";
+        document.getElementById("theAnswer").style.fontWeight = "700";
     }
 }
 
