@@ -17,13 +17,13 @@ The landing page is the index.html that the user will see which has different co
 
 #### Description
 
-The description can be found on all html pages by hovering the mouse on the question mark icon. This will allow to make the user aware of the number subjects and that he can replay the game to have other questions.
+The **Description** can be found on all html pages by hovering the mouse on the question mark icon. This will allow to make the user aware of the number subjects and that he can replay the game to have other questions.
 
 ![Description](assets/images/description.jpg)
 
 #### Username Form
 
-The user form can be found on the first page that will ask the player to choose an username. This username will then be displayed on the second page of the website.
+The **User Form** can be found on the first page that will ask the player to choose an username. This username will then be displayed on the second page of the website.
 
 ![Username-Form](assets/images/username-form.jpg)
 
@@ -37,19 +37,19 @@ The score area show the number of questions *(which is 7)* that one round will d
 
 #### Question number 
 
-The question number is actually very useful as this what the game will check to know if whether or not the game needs to end. The game will indeed display 7 questions per round.
+The **Question number** is actually very useful as this what the game will check to know if whether or not the game needs to end. The game will indeed display 7 questions per round.
 
 ![Question-number](assets/images/display-question-number.jpg)
 
 #### Question content
 
-The question content will be chosen randomly by the system between the 14 possibilities. It is divided in 3 elements that stay connected: the subject, the actual question and 3 different answer options.
+The question content will be chosen randomly by the system between the *14 possibilities*. It is divided in 3 elements that stay connected: the subject, the actual question and 3 different answer options.
 
 ![Question-content](assets/images/display-question.jpg)
 
 #### Submit button
 
-The submit button as different roles: 
+The **Submit** button as different roles: 
 * Add a point to the score if the answer is correct,
 * Display an answer feedback to let the user know if the right answer or not has been selected. If the wrong one has been selected, the message will inform the user what was the correct answer.
 
@@ -57,10 +57,15 @@ The submit button as different roles:
 ![Right Answer](assets/images/display-answer-right.jpg)
 ![Wrong Answer](assets/images/display-answer-wrong.jpg)
 
+#### Next Question button
+
+This button will be display below the answer feedback once the **Submit** button has been clicked. When the **Next Question** button is clicked, it will either display a new question if the maximum of questions hasn't been reach yet. If it has been reach, it will end the quiz round.
+
+![Next Question](assets/images/next-question.jpg)
 
 #### End Message
 
-The end message will be display once the 7 questions have been answered whereas the question area will be hidden. The user will then easily understand that the round is over and a little feedback will show. This feedback will change depending of the score of the round. 
+The **End Message** will be display once the 7 questions have been answered whereas the question area will be hidden. The user will then easily understand that the round is over and a little feedback will show. This feedback will change depending of the score of the round. 
 
 * If the score is below 4 points : 
 
@@ -76,7 +81,7 @@ The end message will be display once the 7 questions have been answered whereas 
 
 #### End buttons
 
-With the End message, two buttons will be displayed. The user will have the choice to either restart the game from the quizz.html with the username saved or exit the game and redirect to the index.html.
+With the **End message**, two buttons will be displayed. The user will have the choice to either restart the game from the quizz.html with the username saved or exit the game and redirect to the index.html.
 
 ![End-buttons](assets/images/end-buttons.jpg)
 
