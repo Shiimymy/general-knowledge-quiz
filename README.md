@@ -60,7 +60,17 @@ The submit button as different roles:
 
 The end message will be display once the 7 questions have been answered whereas the question area will be hidden. The user will then easily understand that the round is over and a little feedback will show. This feedback will change depending of the score of the round. 
 
-![End-message](assets/images/end-message.jpg)
+* If the score is below 4 points : 
+
+![End-message-bad](assets/images/end-message-bad.jpg)
+
+* If the score is below 7 points : 
+
+![End-message-good](assets/images/end-message-good.jpg)
+
+* If the score is of 7 points : 
+
+![End-message-great](assets/images/end-message-great.jpg)
 
 #### End buttons
 
