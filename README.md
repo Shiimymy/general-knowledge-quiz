@@ -19,7 +19,7 @@ The landing page is the index.html that the user will see which has different co
 
 The description can be found on all html pages by hovering the mouse on the question mark icon. This will allow to make the user aware of the number subjects and that he can replay the game to have other questions.
 
-![Description](assets/images/display-description.jpg)
+![Description](assets/images/description.jpg)
 
 #### Username Form
 
@@ -73,7 +73,7 @@ With the End message, two buttons will be displayed. The user will have the choi
 ### Manual Testing
 
 | Test | Expected result | Passed |
-| ---- | ---- | --- |
+| ---- | ---- | ---- |
 | Cross Browser Testing | The Website is working on Google Chrome, Microsoft Edge, and Firefox. | YES |
 | Page loading | The pages load correctly with content at the right position | YES |
 | Username Form | The form can't be submitted without an username and redirect to quizz.html | YES |
