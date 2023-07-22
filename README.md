@@ -50,11 +50,13 @@ The question content will be chosen randomly by the system between the 14 possib
 #### Submit button
 
 The submit button as different roles: 
-* Display the next question once the answer has been selected and the user click it,
 * Add a point to the score if the answer is correct,
-* And check if the maximum of questions, during the round, has been reach to end quiz.
+* Display an answer feedback to let the user know if the right answer or not has been selected. If the wrong one has been selected, the message will inform the user what was the correct answer.
 
 ![Submit-button](assets/images/submit-selection.jpg)
+![Right Answer](assets/images/display-answer-right.jpg)
+![Wrong Answer](assets/images/display-answer-wrong.jpg)
+
 
 #### End Message
 
