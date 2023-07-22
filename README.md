@@ -134,6 +134,7 @@ I used [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to t
 | User experience | User didn't know the correct answer when choosing a wrong option | Add message when answer is submitted |
 | Score colour | The content was transparent | Update colour in css to make the content visible |
 | Input Attribute | In the text input of the first page was "min" attribute | It is now deleted |
+| Answer submission | The user could submit without selecting an answer after the first question | Set the localStorage.correct to null when a new question is display and add alert to prevent form submission |
 
 ## Deployment
 
