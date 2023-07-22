@@ -64,7 +64,7 @@ The end message will be display once the 7 questions have been answered whereas 
 
 #### End buttons
 
-With the End message, two buttons will be displayed. The user will have the choice to either restart the game from the question or exit the game totally.
+With the End message, two buttons will be displayed. The user will have the choice to either restart the game from the quizz.html with the username saved or exit the game and redirect to the index.html.
 
 ![End-buttons](assets/images/end-buttons.jpg)
 
