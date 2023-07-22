@@ -54,7 +54,9 @@ The **Submit** button as different roles:
 * Display an answer feedback to let the user know if the right answer or not has been selected. If the wrong one has been selected, the message will inform the user what was the correct answer.
 
 ![Submit-button](assets/images/submit-selection.jpg)
+
 ![Right Answer](assets/images/display-answer-right.jpg)
+
 ![Wrong Answer](assets/images/display-answer-wrong.jpg)
 
 #### Next Question button
