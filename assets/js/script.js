@@ -188,6 +188,7 @@ function displayQuestions() {
     //Hide end message.
     document.getElementById("end-message").style.display = "none";
     document.getElementById("answer-feedback").style.display = "none";
+    localStorage.correct = "null";
 
     let result = getRandomQuestions(questionsList);
 
@@ -248,6 +249,8 @@ function displayNextQuestion(event) {
         document.getElementById("theAnswer").style.fontWeight = "700";
         addToScore();
 
+    } else if (localStorage.correct == "null") { 
+        alert("Please select an answer");
     } else {
         document.getElementById("answer-feedback").style.display = "";
         document.getElementById("submit").style.display = "none";
@@ -277,6 +280,7 @@ function getAnswers() {
     if (questionNumber != "8") {
         displayQuestions();
         document.getElementById("submit").style.display = "";
+
     } else {
         let result = document.getElementById("points").innerHTML;
         localStorage.setItem('result', result);
