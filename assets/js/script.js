@@ -324,6 +324,10 @@ function restartGame() {
     window.location.href = `quizz.html?username=${localStorage.username}`;
 }
 
+function exitGame() {
+    window.location.href = `index.html`;
+}
+
 
 
 
